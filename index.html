@@ -25,27 +25,98 @@
     <!-- Logo -->
     <a href="#" class="flex items-center gap-2">
       <img src="https://www.uni4edu.com/favicon.ico" alt="logo" class="w-10 h-10" />
-      <span class="font-bold text-gray-800 text-lg">uni4edu</span>
+      <span class="font-bold text-gray-800 text-lg"></span>
     </a>
 
     <!-- Menu Links -->
     <ul class="hidden md:flex items-center gap-8 text-gray-800 font-medium">
-      <li><a href="#" class="hover:text-teal-500">Universities ▾</a></li>
-      <li><a href="#" class="hover:text-teal-500">Masters</a></li>
-      <li><a href="#" class="hover:text-teal-500">Language Schools ▾</a></li>
-      <li><a href="#" class="hover:text-teal-500">Summer Schools ▾</a></li>
-      <li><a href="#" class="hover:text-teal-500">High School</a></li>
+      <li class="flex">
+        <a href="#" class=" flex items-center gap-1 hover:transition-all duration-200 hover:opacity-75 hover:text-base">Universities
+        <img src="download (1).svg" alt="logo" class="w-5 h-5 transition-transform duration-200 group-hover:rotate-90" />
+        </a>
+      </li>
+      <li><a href="#">Masters</a></li>
+    
+        <a href="#" class=" flex items-center gap-1 hover:transition-all duration-200 hover:opacity-75 hover:text-base whitespace-nowrap"> Language Schools 
+        <img src="download (1).svg" alt="logo" class="w-5 h-5 transition-transform duration-200 group-hover:rotate-90" />
+        </a>
+      </li>
+      <li class="flex">
+        <a href="#" class=" flex items-center gap-1 hover:transition-all duration-200 hover:opacity-75 hover:text-base whitespace-nowrap">Summer Schools
+        <img src="download (1).svg" alt="logo" class="w-5 h-5 transition-transform duration-200 group-hover:rotate-90" />
+        </a>
+      </li>
+      <li><a href="#" class="whitespace-nowrap">High School</a></li>
     </ul>
 
     <!-- Right side: Search + Login -->
     <div class="flex items-center gap-4">
-      <button class="text-gray-600 hover:text-teal-500 text-xl">🔍</button>
+      <button class="text-gray-600 hover:text-teal-500 text-xl"><img src="download.svg" alt="logo" class="w-5 h-5" /></button>
       <a href="#" class="bg-teal-400 text-white px-6 py-2 rounded-lg font-semibold hover:bg-teal-500">
         Login
       </a>
     </div>
-
+    
   </div>
 </nav>
+<!-- HERO SECTION -->
+<section 
+  class="relative min-h-[600px] flex items-center"
+  style="background-image: url('pic1.jpeg'); background-size: cover; background-position: center;"
+>
+  <!-- Dark overlay -->
+  <div class="absolute inset-0"></div>
+
+  <!-- Content -->
+  <div class="relative z-10 max-w-7xl mx-auto px-6 w-full">
+    
+    <!-- Heading + buttons -->
+    <div class="max-w-xl mb-10">
+      <h1 class="text-4xl font-bold text-white mb-4 leading-tight">
+        Find Your Perfect University, Language School or Summer Schools Program
+      </h1>
+      <p class="text-white text-xl font-sans text-base mb-8">
+        Uni4edu simplifies the journey to studying abroad by bringing top institutions worldwide into a single digital platform. Manage your entire process—from school selection to application—directly within the system and achieve your academic and career goals online.
+      </p>
+      <div class="flex gap-4">
+        <a href="#" class="bg-[#40C4E7] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#40C4E7]/80">
+          Explore Programs
+        </a>
+        <a href="#" class="border border-teal-500 text-teal-500 px-6 py-3 bg-white rounded-lg font-semibold hover:bg-white/80">
+          Get Free Advice
+        </a>
+      </div>
+    </div>
+
+    <!-- Search Bar -->
+    <div class="absolute bg-white rounded-xl p-4 max-w-7xl w-full left-1/2 -translate-x-1/2">
+      <!-- Tabs -->
+      <div class="flex gap-2 mb-4">
+        <button class="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-semibold">University Programs</button>
+        <button class="text-gray-600 px-4 py-2 rounded-lg text-sm font-semibold hover:bg-gray-100">Language Schools</button>
+        <button class="text-gray-600 px-4 py-2 rounded-lg text-sm font-semibold hover:bg-gray-100">Summer Schools</button>
+      </div>
+      <!-- Dropdowns -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-3 items-center">
+        <select class="border border-gray-200 rounded-lg px-3 py-2 text-sm text-gray-500 w-full">
+          <option>Select Location</option>
+        </select>
+        <select class="border border-gray-200 rounded-lg px-3 py-2 text-sm text-gray-500 w-full">
+          <option>Select Institution</option>
+        </select>
+        <select class="border border-gray-200 rounded-lg px-3 py-2 text-sm text-gray-500 w-full">
+          <option>Select Discipline</option>
+        </select>
+        <div class="flex gap-2">
+          <select class="border border-gray-200 rounded-lg px-3 py-2 text-sm text-gray-500 w-full">
+            <option>Program Level</option>
+          </select>
+          <button class="bg-blue-600 text-white px-4 py-2 rounded-lg"><img src="download.svg" alt="logo" class="w-5 h-5" /></button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
 </body>
 </html>
